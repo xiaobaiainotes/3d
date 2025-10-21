@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>交互式 3D 地球示例</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <canvas id="glCanvas"></canvas>
+
+  <main class="content">
+    <section class="panel panel-hero">
+      <div class="panel__inner">
+        <h1>探索我们的星球</h1>
+        <p>基于原生 WebGL 的轻量 3D 地球，滚动即可触发镜头变化与地球自转。</p>
+      </div>
+      <div class="scroll-hint">向下滚动</div>
+    </section>
+
+    <section class="panel panel-features">
+      <div class="panel__inner">
+        <div class="sticky-copy">
+          <h2>可视化亮点</h2>
+          <ul>
+            <li><span>实时 WebGL 渲染</span><small>无第三方库，纯原生着色器与矩阵运算。</small></li>
+            <li><span>滚动驱动镜头</span><small>平滑阻尼的滚动控制，实现自然视角切换。</small></li>
+            <li><span>细腻大气光晕</span><small>独立气层着色器，突显蓝色星球的呼吸感。</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-cta">
+      <div class="panel__inner">
+        <h2>加入你的故事</h2>
+        <p>将这颗动态地球融合进数据叙事、科普展示或品牌官网，让内容更具沉浸感。</p>
+        <a class="cta-button" href="https://earthobservatory.nasa.gov/" target="_blank" rel="noreferrer">
+          探索更多 NASA 资源
+        </a>
+        <footer>
+          <small>地球纹理来源：NASA 高清地球数据集。代码示例由原生 WebGL 驱动。</small>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/earth_texture_base64.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
